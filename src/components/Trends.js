@@ -1,7 +1,7 @@
 const React = require('react');
 const Trend = require('./Trend');
 const request = require('superagent');
-require('/Users/lukemurray/Desktop/Northcoders-sprints/week-4/w04-northwitter/public/css/Trends.css');
+//require('./../public/css/Trends.css');
 
 
 const Trends = React.createClass({

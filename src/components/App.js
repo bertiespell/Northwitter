@@ -1,6 +1,7 @@
 const React = require('react');
 const NavBar = require('./Nav');
 const SideBar = require('./SideBar');
+const RightBar = require('./RightBar');
 
 var App = React.createClass({
     
@@ -9,6 +10,7 @@ var App = React.createClass({
             <div>
                 <NavBar />
                 <SideBar />
+                <RightBar />
             </div>
         );
     }

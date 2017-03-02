@@ -1,5 +1,6 @@
 const React = require('react');
-require('/Users/lukemurray/Desktop/Northcoders-sprints/week-4/w04-northwitter/public/css/who-to-follow.css')
+require('../CSS/who-to-follow.css')
+
 const WhoToFollow = React.createClass({
     render: function () {
         return (
