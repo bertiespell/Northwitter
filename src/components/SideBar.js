@@ -9,7 +9,7 @@ const SideBar = React.createClass({
         return (
             <div className="sidebar">
                 <ProfileCard />
-
+                <WhoToFollow />
                 <Trends />
             </div>
         );
