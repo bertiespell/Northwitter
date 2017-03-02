@@ -1,11 +1,14 @@
 const React = require('react');
 const NavBar = require('./Nav');
+const SideBar = require('./SideBar');
 
 var App = React.createClass({
+    
     render: function () {
         return (
-            <div className='main container-fluid'>
+            <div>
                 <NavBar />
+                <SideBar />
             </div>
         );
     }

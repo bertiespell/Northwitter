@@ -1,4 +1,4 @@
-import React from 'react';
+const React = require('react');
 
 var Logos = React.createClass({
     render: function () {
@@ -25,4 +25,4 @@ var Logos = React.createClass({
     }
 });
 
-export default Logos;
+module.exports = Logos;

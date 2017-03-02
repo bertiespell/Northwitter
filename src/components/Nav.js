@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
+const Logos = require('./Logos');
 
-import Logos from './Logos';
 
 var NavBar = React.createClass({
     render: function () {
@@ -14,4 +14,6 @@ var NavBar = React.createClass({
     }
 });
 
-export default NavBar;
+
+
+module.exports = NavBar;
