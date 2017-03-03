@@ -13,7 +13,6 @@
    border: 2px solid black;
    height: 50%;
    width: 100%;
-   display: inline-block;
 }
 .cover-image {
    height: 100%;
@@ -25,34 +24,54 @@
    width: 100%;
 }
 .profile-image {
-   margin: 20px;
-   border: 2px solid red;
+   margin-left: 20px;
+   border: 5px solid white;
+   height: 30%;
+   width: 30%;
+   border-radius: 10px;
 }
 
 
 .user-name-handle {
-   display: inline-block;
-   border: 2px solid black;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
 
 }
 
 .user-name {
    display: inline-block;
+   font-size: 20px;
+   font-weight: bold;
 
 }
 
-.handle {
-
+.user-handle {
+    font-size: 13px;
 }
 
 .profile-card-stats {
-   
+}
+.profile-card-stats:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 .stat-list {
-display: inline-block;
+text-align: left;
+list-style-type: none;
 }
 
 .list-items {
 display: inline-block;
+color: #51b3f1;
+font-size: 12px;
+padding-left: 10px;
+}
+
+.listTitles {
+    color: grey;
 }

@@ -1,9 +1,77 @@
 .tweets {
-    background-color: white;
-    padding: 20px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-top: 1px solid rgba(0,0,0,0.15);
-    border-left: 1px solid rgba(0,0,0,0.15);
-    border-right: 1px solid rgba(0,0,0,0.15);
+   background-color: white;
+   padding: 20px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-top: 1px solid rgba(0,0,0,0.15);
+   border-left: 1px solid rgba(0,0,0,0.15);
+   border-right: 1px solid rgba(0,0,0,0.15);
+}
+
+.username {
+   float: right;
+   padding-right: 5px;
+
+}
+           
+.avatar {
+
+
+}
+           
+.nameAndDate {
+   padding-right:250px;
+}
+
+.handle {
+   float: right;
+   font-weight: bold;
+   padding-right: 5px;
+}
+           
+.timePosted {
+   float: right;
+
+}
+
+.tweet {
+   padding-right: 1px;.tweets {
+   background-color: white;
+   padding: 20px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-top: 1px solid rgba(0,0,0,0.15);
+   border-left: 1px solid rgba(0,0,0,0.15);
+   border-right: 1px solid rgba(0,0,0,0.15);
+}
+
+.username {
+   float: right;
+   padding-right: 5px;
+
+}
+           
+.avatar {
+
+
+}
+           
+.nameAndDate {
+   padding-right:250px;
+}
+
+.handle {
+   float: right;
+   font-weight: bold;
+   padding-right: 5px;
+}
+           
+.timePosted {
+   float: right;
+
+}
+
+.tweet {
+   padding-right: 1px;
+}
 }

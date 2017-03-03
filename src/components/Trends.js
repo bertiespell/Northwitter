@@ -38,7 +38,7 @@ const Trends = React.createClass({
         });
         return (
             <div className="Trends">
-                 <h4>Trends</h4>
+                 <h4 className="trends-title">Trends</h4>
                  {addTrend}
             </div>
         );

@@ -1,0 +1,11 @@
+.tweetformimage {
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.tweetform {
+    background-color: #e8f5fd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

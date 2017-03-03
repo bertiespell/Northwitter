@@ -7,4 +7,23 @@
     margin-bottom: 30px;
     background-color: white;
     border: 1px solid rgba(0,0,0,0.15);
+    color: grey;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Helvetica, sans-serif;
+}
+
+.trend a {
+    color: #24a4f2;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.trend a:hover {
+    color: #51b3f1;
+}
+
+.trends-title {
+    font-size: 25px;
 }

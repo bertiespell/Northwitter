@@ -3,14 +3,25 @@ require('../CSS/tweets.css');
 const Tweets = React.createClass({
     render: function () {
         return (
-            <div className="tweets">
-                <p>{this.props.username}</p>
-                <img src={this.props.avatar} />
-                <p>{this.props.handle}</p>
-                <p>{this.props.timePosted}</p>
-                <p>{this.props.tweet}</p>
-            </div>
+                <div>
+
+                <img className="avatar" src={this.props.avatar} />
+
+                <div className="nameAndDate">
+                    <p className="timePosted">{this.formatDate(this.props.timePosted)}</p>
+                    <p className="username"> @{this.props.username}</p>
+                    <p className="handle"> {this.props.handle}</p>
+                    <p className="tweet">{this.props.tweet}</p>
+                </div>
+                
+                </div>   
+
+
         );
+    },
+    formatDate: function (date) {
+        var newDate = date.split(' ');
+        return newDate[1] + ' ' + newDate[2];
     }
 });
 

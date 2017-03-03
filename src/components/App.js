@@ -15,7 +15,7 @@ getInitialState: function () {
     },
     componentDidMount: function () {
         request
-            .get(API + 'northcoders')
+            .get(API + 'ruthymng')
             .end(function (err, res) {
                 this.setState({
                     fetching: false,
@@ -44,7 +44,7 @@ getInitialState: function () {
                     <SideBar tweetData={this.state.user_data}/>
 
                     <div className="col-md-8">
-                    <RightBar />
+                    <RightBar tweetData={this.state.user_data}/>
                     </div>
                 </div>
                 <div>

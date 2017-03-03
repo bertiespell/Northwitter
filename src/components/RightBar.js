@@ -35,22 +35,11 @@ const RightBar = React.createClass({
     render: function () {
         return (
             <div className="rightbar">
-                <TweetForm tweetData={this.state.tweetData}/>
+                <TweetForm tweetData={this.props.tweetData}/>
                 <Feed tweetData={this.state.tweetData} fetching={this.state.fetching}/>
             </div>
         );
     },
-    // cleanTweetsProperties: function (tweets) {
-    //     var cleanedTweets = [];
-    //     cleanedTweets.push({
-    //         username: tweets.user.name,
-    //         avatar: tweets.user.profile_image_url,
-    //         handle: "@" + tweets.user.screen_name,
-    //         timePosted: tweets.created_at,
-    //         tweet: tweets.text
-    //     })
-    //     return cleanedTweets;
-    // },
     extractTweet: function (users, limit) {
         var tweets = users.reduce(function (acc, user) {
             const tweets = (user.tweets.slice(0, limit))
