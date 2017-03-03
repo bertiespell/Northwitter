@@ -1,32 +1,43 @@
 .profile-card {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid rgba(0,0,0,0.15);
+   margin-top: 30px;
+   margin-bottom: 30px;
+   width: 100%;
+   height: 30%;
+   background-color: white;
+   border-radius: 5px;
+   border: 1px solid rgba(0,0,0,0.15);
 }
 
 
 .top-half {
-    border: 2px solid black;
-    height: 50%;
+   border: 2px solid black;
+   height: 50%;
+   width: 100%;
+   display: inline-block;
 }
 .cover-image {
-    height: 100%;
-    width: 100%;
+   height: 100%;
+   width: 100%;
 }
 
 .bottom-half {
-
+   height: 50%;
+   width: 100%;
+}
+.profile-image {
+   margin: 20px;
+   border: 2px solid red;
 }
 
 
 .user-name-handle {
+   display: inline-block;
+   border: 2px solid black;
 
 }
 
 .user-name {
+   display: inline-block;
 
 }
 
@@ -35,13 +46,13 @@
 }
 
 .profile-card-stats {
-
+   
 }
 
 .stat-list {
-
+display: inline-block;
 }
 
 .list-items {
-
+display: inline-block;
 }

@@ -35,40 +35,28 @@ const RightBar = React.createClass({
     render: function () {
         return (
             <div className="rightbar">
+                <TweetForm tweetData={this.state.tweetData}/>
                 <Feed tweetData={this.state.tweetData} fetching={this.state.fetching}/>
-                <TweetForm />
             </div>
         );
     },
-    cleanTweetsProperties: function (tweets) {
-        var cleanedTweets = [];
-        cleanedTweets.push({
-            username: tweets.user.name,
-            avatar: tweets.user.profile_image_url,
-            handle: "@" + tweets.user.screen_name,
-            timePosted: tweets.created_at,
-            tweet: tweets.text
-        })
-        return cleanedTweets;
-    },
+    // cleanTweetsProperties: function (tweets) {
+    //     var cleanedTweets = [];
+    //     cleanedTweets.push({
+    //         username: tweets.user.name,
+    //         avatar: tweets.user.profile_image_url,
+    //         handle: "@" + tweets.user.screen_name,
+    //         timePosted: tweets.created_at,
+    //         tweet: tweets.text
+    //     })
+    //     return cleanedTweets;
+    // },
     extractTweet: function (users, limit) {
-        var reducezz = users.reduce(function (acc, user) {
+        var tweets = users.reduce(function (acc, user) {
             const tweets = (user.tweets.slice(0, limit))
             return acc.concat(tweets);
         }, []);
-        console.log(reducezz);
-        return reducezz;
-        // for (var i = 0; i < 10; i++){
-        //     let newUser = res.body[i].tweets[0]
-        //     tweetArr.push({
-        //         username: newUser.user.name,
-        //        avatar: newUser.user.profile_image_url,
-        //         handle: "@" + newUser.user.screen_name,
-        //         timePosted: newUser.created_at ,
-        //         tweet: newUser.text
-        //     })
-        // }
-        // return tweetArr;
+        return tweets;
     }
 });
 

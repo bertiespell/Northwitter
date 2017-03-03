@@ -8,7 +8,7 @@ const SideBar = React.createClass({
     render: function () {
         return (
             <div className="sidebar col-md-4">
-                <ProfileCard />
+                <ProfileCard tweetData={this.props.tweetData}/>
                 {/*<WhoToFollow />*/}
                 <Trends />
             </div>
