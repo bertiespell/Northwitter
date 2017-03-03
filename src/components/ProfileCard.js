@@ -1,6 +1,6 @@
 const React = require('react');
 const request = require('superagent');
-// require('./ProfileCard.css');
+require('../CSS/Profilecard.css');
 
 const ProfileCard = React.createClass({
     getInitialState: function () {
@@ -23,6 +23,7 @@ const ProfileCard = React.createClass({
     extractUser: function (res) {
         const user = res.body.tweetData[0].user;
         return {
+            banner: user.profile_banner_url,
             avatar_url: user.profile_image_url,
             username: user.name,
             handle: '@' + user.screen_name,
@@ -35,12 +36,25 @@ const ProfileCard = React.createClass({
         if (this.state.fetching) return <p>Loading...</p>;
         return (
             <div className="profile-card">
-                <img src={this.state.user_data.avatar_url} />
-                <h3>{this.state.user_data.username}</h3>
-                <h4>{this.state.user_data.handle}</h4>
-                <h4>{this.state.user_data.tweets}</h4>
-                <h4>{this.state.user_data.followers}</h4>
-                <h4>{this.state.user_data.following}</h4>
+                <div className="top-half">
+                    <img className="cover-image" src={this.state.user_data.banner} />
+                </div>
+                <div className="bottom-half">
+                    <img src={this.state.user_data.avatar_url} />
+                    <div className="user-name-handle" >
+                        <div className="user-name">
+                            <h3>{this.state.user_data.username}</h3>
+                        </div>
+                        <span className="handle"><h4>{this.state.user_data.handle}</h4></span>
+                    </div>
+                    <div className="profile-card-stats">
+                        <ul className="stat-list">
+                            <li className="list-items">{this.state.user_data.tweets}</li>
+                            <li className="list-items">{this.state.user_data.followers}</li>
+                            <li className="list-items">{this.state.user_data.following}</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         );
     }

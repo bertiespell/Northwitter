@@ -7,9 +7,9 @@ require('../CSS/Trends.css');
 const SideBar = React.createClass({
     render: function () {
         return (
-            <div className="sidebar">
+            <div className="sidebar col-md-4">
                 <ProfileCard />
-                <WhoToFollow />
+                {/*<WhoToFollow />*/}
                 <Trends />
             </div>
         );

@@ -2,6 +2,7 @@ const React = require('react');
 const Feed = require('./Feed');
 const TweetForm = require('./TweetForm');
 const request = require('superagent');
+require('../CSS/rightbar.css');
 
 const RightBar = React.createClass({
     getInitialState: function () {

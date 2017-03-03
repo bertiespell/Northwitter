@@ -4,14 +4,23 @@ const SideBar = require('./SideBar');
 const RightBar = require('./RightBar');
 
 var App = React.createClass({
-    
+
     render: function () {
         return (
-            <div>
+            <div className="container">
                 <NavBar />
-                <SideBar />
-                <RightBar />
+                <div className="row">   
+                    
+                    <SideBar />
+
+                    <div className="col-md-8">
+                    <RightBar />
+                    </div>
+                </div>
+                <div>
+                </div>
             </div>
+
         );
     }
 });

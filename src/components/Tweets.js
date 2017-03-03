@@ -1,5 +1,5 @@
 const React = require('react');
-
+require('../CSS/tweets.css');
 const Tweets = React.createClass({
     render: function () {
         return (
